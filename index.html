@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="Card.css">
+    <title>Card Layout</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+      
+          background-color: pink;
+        }
+		
+        .container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			padding: 20px;
+			
+        
+		}
+    .lm{
+      background-color: violet;
+    }
+    .ml{
+      background-color: lightskyblue;
+    }
+
+		.card{
+            width: 250px;
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			background-color:lightgrey;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: box-shadow 0.3s ease-in-out;
+            
+			
+		}
+    
+
+		.card:hover {
+			box-shadow: 0 32px 64px 0 rgba(0,0,0,0.4);
+            background-color: whitesmoke;
+		}
+
+		.card img {
+			width: 100%;
+			max-height: 150px;
+			object-fit: cover;
+			
+		}
+
+		.card h2 {
+			margin-bottom: 5px;
+			text-align: center;
+		}
+@media only screen and ((max-width:900px) and (min-width:600px))
+{
+  .card{
+    background-color: aquamarine;
+  }
+  .container{
+    background-color: darkolivegreen;
+  }
+  .lm{
+    background-color: navy;
+  }
+  .ml{
+    background-color: olive;
+  }
+ .card:hover{
+  background-color: red;
+ }
+}
+		
+
+        
+        
+	</style>
+</head>
+<body>
+	<div class="container">
+    <div class="lm">
+        <div class="card">
+          
+           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corporis ducimus incidunt, nisi obcaecati magnam ipsam quo, possimus illo ad tenetur debitis molestiae dicta itaque laudantium doloribus perspiciatis quam culpa!</h3>
+		   
+        </div>
+      </div>
+      <div class="ml">
+        <div class="card">
+     
+		   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corporis ducimus incidunt, nisi obcaecati magnam ipsam quo, possimus illo ad tenetur debitis molestiae dicta itaque laudantium doloribus perspiciatis quam culpa!</h3>
+        </div>
+      </div>
+    </div>
+</body>
+</html> 
